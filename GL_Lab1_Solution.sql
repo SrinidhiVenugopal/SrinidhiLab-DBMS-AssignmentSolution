@@ -155,8 +155,8 @@ begin
 SELECT  SUPP.SUPP_ID,SUPP.SUPP_NAME,R.RAT_RATSTARS,
 CASE 
 	WHEN R.RAT_RATSTARS = 5 THEN 'Excellent Service'
-    WHEN R.RAT_RATSTARS >= 4 THEN 'Good Service'
-     WHEN R.RAT_RATSTARS > 2 THEN 'Average Service'
+   	WHEN R.RAT_RATSTARS >= 4 THEN 'Good Service'
+     	WHEN R.RAT_RATSTARS > 2 THEN 'Average Service'
     ELSE 'Poor Service'
 END AS Type_Of_Service
 from RATING R
